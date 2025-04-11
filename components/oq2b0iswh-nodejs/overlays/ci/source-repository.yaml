@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: oq2b0iswh-nodejs-repository
+spec:
+  url: https://github.com/xjiangorg/oq2b0iswh-nodejs

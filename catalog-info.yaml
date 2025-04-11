@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: oq2b0iswh-nodejs-gitops
+  description: This is GitOps manifest for oq2b0iswh-nodejs   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=oq2b0iswh-nodejs
+    backstage.io/kubernetes-id: oq2b0iswh-nodejs 
+    backstage.io/techdocs-ref: dir:. 
+    jenkins.io/job-full-name: oq2b0iswh-nodejs-gitops
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:oq2b0iswh-nodejs
